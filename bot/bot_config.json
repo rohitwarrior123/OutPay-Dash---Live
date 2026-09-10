@@ -1,0 +1,28 @@
+{
+  "excel_path": "C:\\Users\\Gaikwad.Rohit\\OneDrive - Aditya Birla Group\\Contract Management - Contract Management\\FY 2026-27 NJL\\Outright Invoice Master File FY26-27.xlsx",
+  "sheet_name": 0,
+  "header_row": 0,
+
+  "_comment_columns": "Map dashboard fields -> exact Excel column header names. Edit the right-hand values to match your sheet, leave left-hand keys as-is.",
+  "column_map": {
+    "vendor_name": "Vendor Name",
+    "contract_id": "Contract ID",
+    "invoice_no": "Invoice No",
+    "invoice_date": "Invoice Date",
+    "amount": "Amount",
+    "status": "Status",
+    "due_date": "Due Date",
+    "paid_date": "Paid Date"
+  },
+
+  "output_path": "../data/dashboard_data.json",
+
+  "git": {
+    "repo_dir": "..",
+    "branch": "main",
+    "commit_message": "Auto-update dashboard data",
+    "remote": "origin"
+  },
+
+  "poll_interval_minutes": 5
+}
