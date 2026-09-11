@@ -45,13 +45,23 @@ def read_excel(cfg):
     return df
 
 
+def _normalize(name):
+    """Collapse internal whitespace and strip ends, so 'Vendor Name ' and
+    'Vendor  Name' and 'Vendor Name' all match the same way."""
+    return " ".join(str(name).split())
+
+
 def map_columns(df, column_map):
     """Rename Excel headers -> dashboard field names, keeping only mapped columns
-    that actually exist in the sheet (missing ones are skipped with a warning)."""
+    that actually exist in the sheet (missing ones are skipped with a warning).
+    Matching ignores leading/trailing/extra internal whitespace differences."""
+    normalized_lookup = {_normalize(col): col for col in df.columns}
     rename = {}
     for field, excel_header in column_map.items():
-        if excel_header in df.columns:
-            rename[excel_header] = field
+        key = _normalize(excel_header)
+        if key in normalized_lookup:
+            actual_col = normalized_lookup[key]
+            rename[actual_col] = field
         else:
             print(f"[warn] column '{excel_header}' (-> {field}) not found in sheet; skipping")
     mapped = df[list(rename.keys())].rename(columns=rename)
