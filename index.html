@@ -621,6 +621,75 @@ document.getElementById('fileInput').addEventListener('change', (e)=>{
   e.target.value = '';
 });
 
+// ---------- AUTO-SYNC FROM BOT (data/dashboard_data.json) ----------
+// The bot (update_data.py) writes {last_updated, row_count, rows:[...]} to
+// data/dashboard_data.json every few minutes, using dashboard-field names
+// from bot_config.json's column_map. Translate those into this page's
+// internal short keys (same ones parseWorkbook() produces) and reuse the
+// existing render pipeline.
+const BOT_FIELD_MAP = {
+  fy:'fy', month:'mo', state:'st', city:'ci', vendor_code:'vc', vendor_name:'vn',
+  asn_no:'asn', invoice_no:'inv', invoice_date:'idt', qty:'qty', base_amount:'base',
+  tax:'tax', grand_total:'gt', payment_status:'ps', due_date:'dd', payment_date:'pd',
+  invoice_remarks:'rem', submission_date:'sd', order_type:'ot', qtr:'qtr',
+  overall_due:'od', weekly_due:'wd', msme:'msme', spoc_sourcing:'ss', payment_time:'pt',
+  submission_pct:'sp', spoc_inwarding:'si', tds_amount:'tds', net_amount:'net'
+};
+
+function isoToDMY(v){
+  if(v==null || v==='') return '';
+  const m = String(v).match(/^(\d{4})-(\d{2})-(\d{2})/);
+  if(m) return `${m[3]}-${m[2]}-${m[1]}`;
+  return String(v).trim();
+}
+
+function mapBotRow(row){
+  const obj = {};
+  Object.keys(BOT_FIELD_MAP).forEach(botKey=>{
+    const key = BOT_FIELD_MAP[botKey];
+    const v = row[botKey];
+    if(NUM_KEYS.has(key)) obj[key] = typeof v==='number' ? v : (parseFloat(v)||0);
+    else if(DATE_KEYS.has(key)) obj[key] = isoToDMY(v);
+    else obj[key] = v==null ? '' : String(v).trim();
+  });
+  return obj;
+}
+
+let lastAutoSyncStamp = null;
+const AUTO_SYNC_POLL_MS = 90000; // matches bot's ~5 min cycle closely enough
+
+async function autoSyncFromBot(isBackground){
+  const pill = document.getElementById('syncPill');
+  try{
+    const resp = await fetch('data/dashboard_data.json?t=' + Date.now(), {cache:'no-store'});
+    if(!resp.ok) throw new Error('HTTP ' + resp.status);
+    const payload = await resp.json();
+    const rows = Array.isArray(payload) ? payload : (payload.rows || []);
+    if(!rows.length) throw new Error('No rows in bot data yet');
+    // Skip re-render on background polls if the bot hasn't published anything new
+    // (this also means a manual upload stays visible until the bot's next push).
+    if(isBackground && payload.last_updated && payload.last_updated === lastAutoSyncStamp) return;
+    lastAutoSyncStamp = payload.last_updated || null;
+    rawData = rows.map(mapBotRow).filter(o=> o.inv || o.vn);
+    if(!rawData.length) throw new Error('Bot rows missing invoice/vendor data');
+    renderAll();
+    const updated = payload.last_updated ? new Date(payload.last_updated) : new Date();
+    const stamp = String(updated.getDate()).padStart(2,'0')+'-'+String(updated.getMonth()+1).padStart(2,'0')+'-'+updated.getFullYear()+' '+String(updated.getHours()).padStart(2,'0')+':'+String(updated.getMinutes()).padStart(2,'0');
+    pill.className = 'sync-pill live';
+    pill.innerHTML = '<span class="sync-dot"></span> '+fmtInt(rawData.length)+' invoices · auto-synced · updated '+stamp;
+    document.getElementById('fixnote').innerHTML = '✓ Auto-synced from the bot — refreshes automatically every '+Math.round(AUTO_SYNC_POLL_MS/60000)+' min. Every section below (including Top Vendors, Trend Analysis and Delay/On-time) is computed from this data. You can still click <b>⬆ Upload Excel</b> to load a different file manually; that view stays until the bot publishes its next update.';
+  }catch(err){
+    if(!isBackground){
+      pill.className = 'sync-pill error';
+      pill.innerHTML = '<span class="sync-dot"></span> Auto-sync unavailable ('+err.message+') — click ⬆ Upload Excel to load data manually.';
+    }
+    console.warn('Auto-sync failed:', err.message);
+  }
+}
+
+autoSyncFromBot(false);
+setInterval(()=> autoSyncFromBot(true), AUTO_SYNC_POLL_MS);
+
 // ---------- HELPERS ----------
 function num(v){ return typeof v === 'number' ? v : (parseFloat(v)||0); }
 function fmt(v){ return num(v).toLocaleString('en-IN', {maximumFractionDigits:0}); }
