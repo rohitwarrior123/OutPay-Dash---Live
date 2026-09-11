@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-09-11T11:24:08.059226+00:00",
-  "row_count": 6079,
+  "last_updated": "2026-09-11T11:29:14.278735+00:00",
+  "row_count": 6080,
   "rows": [
     {
       "sr_no": 1,
@@ -212766,6 +212766,41 @@
       "spoc_inwarding": "Mamta.Vishwakarma",
       "tds_amount": 851.9704,
       "net_amount": 876677.5416
+    },
+    {
+      "sr_no": 6080,
+      "fy": "26-27",
+      "month": "Aug-26",
+      "state": "Maharashtra",
+      "city": "Mumbai",
+      "grn_date": "2026-09-10",
+      "vendor_code": "VC-4512",
+      "vendor_name": "Aura Jewels Private Limited",
+      "asn_no": "PO-ASN-059580",
+      "invoice_no": "ATI-26-27-5786",
+      "invoice_date": "2026-08-24",
+      "qty": 0,
+      "base_amount": 2847216.43,
+      "tax": 85416.4929,
+      "grand_total": 2932632.9229,
+      "payment_status": "Pending",
+      "due_date": "2026-09-08",
+      "payment_date": null,
+      "invoice_remarks": "GRN done but invoice not upload",
+      "submission_date": null,
+      "digital_manual": null,
+      "order_type": "Regular order",
+      "values_in_cr": 0.2932632923,
+      "qtr": "Q2",
+      "overall_due": "Overdue",
+      "weekly_due": "Due till date",
+      "msme": "MSME",
+      "spoc_sourcing": "Rajesh",
+      "payment_time": "Not paid",
+      "submission_pct": "Not submitted",
+      "spoc_inwarding": "tejas.kamtekar",
+      "tds_amount": 2847.21643,
+      "net_amount": 2929785.70647
     }
   ]
 }
