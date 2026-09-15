@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-15T09:56:09.707648+00:00",
+  "last_updated": "2026-09-15T10:40:57.567328+00:00",
   "row_count": 6217,
   "rows": [
     {
@@ -217575,9 +217575,9 @@
       "invoice_no": "UJIL-920",
       "invoice_date": "2026-09-10",
       "qty": 0,
-      "base_amount": 4489280.38,
-      "tax": 134678.4114,
-      "grand_total": 4623958.7913999995,
+      "base_amount": 4489283.0,
+      "tax": 134678.49,
+      "grand_total": 4623961.49,
       "payment_status": "Pending",
       "due_date": "2026-10-10",
       "payment_date": null,
@@ -217585,7 +217585,7 @@
       "submission_date": null,
       "digital_manual": null,
       "order_type": "Regular order",
-      "values_in_cr": 0.4623958791,
+      "values_in_cr": 0.462396149,
       "qtr": "Q2",
       "overall_due": "Upcoming due",
       "weekly_due": "Oct Week 2",
@@ -217594,8 +217594,8 @@
       "payment_time": "Not paid",
       "submission_pct": "Not submitted",
       "spoc_inwarding": "Shubham.Kadam",
-      "tds_amount": 4489.28038,
-      "net_amount": 4619469.511019999
+      "tds_amount": 4489.283,
+      "net_amount": 4619472.207
     }
   ]
 }
