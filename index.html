@@ -465,7 +465,7 @@
           <span class="eyebrow" style="color:var(--gold)">Deeper Analysis</span>
           <h2>🚨 Top Vendors — Pending Amount</h2>
         </div>
-        <div class="hint">Highest outstanding (Payment Status = Pending) net amount, top 12</div>
+        <div class="hint">Highest outstanding (Payment Status = Pending) invoice base value, top 12</div>
       </div>
       <div class="card-grid" id="aTopVendors"><div class="empty-note">No pending invoices found.</div></div>
     </section>
@@ -775,12 +775,12 @@ function renderKPI(){
   const doneValue = doneRows.reduce((s,r)=>s+num(r.base),0);
 
   const kpis = [
-    {label:'Invoice Value (Base)', color:'var(--s1)', value:'₹ '+fmt(invoiceValue/10000000)+'', unit:'Cr', delta:fmtInt(invoiceCount)+' invoices'},
-    {label:'Payment Done', color:'var(--done)', value:'₹ '+fmt(doneValue/10000000), unit:'Cr', delta:fmtInt(doneRows.length)+' invoices'},
-    {label:'Payment Pending', color:'var(--pending)', value:'₹ '+fmt(pendingValue/10000000), unit:'Cr', delta:fmtInt(pendingRows.length)+' invoices', flag:true},
-    {label:'Tax Amount', color:'var(--s2)', value:'₹ '+fmt(taxAmount/10000000), unit:'Cr', delta:'on '+fmtInt(invoiceCount)+' invoices'},
-    {label:'Overdue', color:'var(--overdue)', value:'₹ '+fmt(overdueValue/10000000), unit:'Cr', delta:fmtInt(overdueRows.length)+' invoices', flag:true},
-    {label:'Upcoming Due', color:'var(--upcoming)', value:'₹ '+fmt(upcomingValue/10000000), unit:'Cr', delta:fmtInt(upcomingRows.length)+' invoices', warn:true},
+    {label:'Invoice Value (Base)', color:'var(--s1)', value:'₹ '+fmt2(invoiceValue/10000000)+'', unit:'Cr', delta:fmtInt(invoiceCount)+' invoices'},
+    {label:'Payment Done', color:'var(--done)', value:'₹ '+fmt2(doneValue/10000000), unit:'Cr', delta:fmtInt(doneRows.length)+' invoices'},
+    {label:'Payment Pending', color:'var(--pending)', value:'₹ '+fmt2(pendingValue/10000000), unit:'Cr', delta:fmtInt(pendingRows.length)+' invoices', flag:true},
+    {label:'Tax Amount', color:'var(--s2)', value:'₹ '+fmt2(taxAmount/10000000), unit:'Cr', delta:'on '+fmtInt(invoiceCount)+' invoices'},
+    {label:'Overdue', color:'var(--overdue)', value:'₹ '+fmt2(overdueValue/10000000), unit:'Cr', delta:fmtInt(overdueRows.length)+' invoices', flag:true},
+    {label:'Upcoming Due', color:'var(--upcoming)', value:'₹ '+fmt2(upcomingValue/10000000), unit:'Cr', delta:fmtInt(upcomingRows.length)+' invoices', warn:true},
   ];
   document.getElementById('kpiStrip').innerHTML = kpis.map(k=>`
     <div class="kpi ${k.flag?'flag':''} ${k.warn?'warn':''}">
@@ -1061,7 +1061,7 @@ function renderAnalysis(){
   const vp = {};
   rawData.filter(r=>String(r.ps).trim()==='Pending').forEach(r=>{
     if(!vp[r.vn]) vp[r.vn] = {vn:r.vn, vc:r.vc, pend:0, cnt:0};
-    vp[r.vn].pend += num(r.net);
+    vp[r.vn].pend += num(r.base);
     vp[r.vn].cnt += 1;
   });
   const top = Object.values(vp).sort((a,b)=>b.pend-a.pend).slice(0,12);
@@ -1070,7 +1070,7 @@ function renderAnalysis(){
     <div class="mini-card">
       <div class="mc-head"><div class="mc-title">${v.vn}</div></div>
       <div class="mc-sub">${v.vc} · ${v.cnt} invoice(s) pending</div>
-      <div class="mc-val">₹ ${fmt(v.pend)}</div>
+      <div class="mc-val">₹ ${fmt2(v.pend)}</div>
       <div class="mc-bar"><div class="mc-bar-fill" style="width:${(v.pend/maxPend*100).toFixed(1)}%"></div></div>
     </div>
   `).join('') || `<div class="empty-note">No pending invoices found.</div>`;
@@ -1142,7 +1142,7 @@ function renderMonthlyChart(){
   rawData.forEach(r=>{
     const key = r.mo+'|'+r.fy;
     if(!byMo[key]) byMo[key] = {mo:r.mo, fy:r.fy, base:0};
-    byMo[key].base += num(r.net);
+    byMo[key].base += num(r.base);
   });
   const items = Object.values(byMo).filter(g=>g.mo).sort((a,b)=> a.fy===b.fy ? a.mo.localeCompare(b.mo) : (a.fy||'').localeCompare(b.fy||''));
   const data = items.map(g=>({label:g.mo, value:g.base/10000000, color:'var(--s1)'}));
@@ -1150,13 +1150,13 @@ function renderMonthlyChart(){
 }
 
 function renderPaymentStatusChart(){
-  const done = rawData.filter(r=>r.ps==='Payment Done').reduce((s,r)=>s+num(r.net),0);
-  const pending = rawData.filter(r=>r.ps==='Pending').reduce((s,r)=>s+num(r.net),0);
+  const done = rawData.filter(r=>r.ps==='Payment Done').reduce((s,r)=>s+num(r.base),0);
+  const pending = rawData.filter(r=>r.ps==='Pending').reduce((s,r)=>s+num(r.base),0);
   const data = [
     {label:'Payment Done', value:done, color:'var(--done)'},
     {label:'Pending', value:pending, color:'var(--pending)'}
   ];
-  drawDonutChart('chartPaymentStatus', data, v=>'₹'+fmt(v));
+  drawDonutChart('chartPaymentStatus', data, v=>'₹'+fmt2(v));
 }
 
 function renderTimelinessChart(){
@@ -1174,7 +1174,7 @@ function renderOrderTypeChart(){
   const byOt = {};
   rawData.forEach(r=>{
     if(!r.ot) return;
-    byOt[r.ot] = (byOt[r.ot]||0) + num(r.net);
+    byOt[r.ot] = (byOt[r.ot]||0) + num(r.base);
   });
   const palette = ['var(--s1)','var(--s2)','var(--s3)','var(--s4)','var(--gold)'];
   const data = Object.keys(byOt).map((k,i)=>({label:k, value:byOt[k]/10000000, color:palette[i%palette.length]}))
