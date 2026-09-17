@@ -476,11 +476,11 @@
           <span class="eyebrow" style="color:var(--s1)">Trend Analysis</span>
           <h2>📈 Monthly Value &amp; Payment Status</h2>
         </div>
-        <div class="hint">Net amount trend by month, and payment status split by value</div>
+        <div class="hint">Invoice base amount trend by month, and payment status split by value</div>
       </div>
       <div class="chart-grid">
         <div class="chart-card">
-          <div class="chart-title">Monthly Net Amount (₹ Cr)</div>
+          <div class="chart-title">Monthly Invoice Base Amount (₹ Cr)</div>
           <div id="chartMonthly" class="chart-box"><div class="empty-note">No data available.</div></div>
         </div>
         <div class="chart-card">
@@ -496,7 +496,7 @@
           <span class="eyebrow" style="color:var(--s3)">Timeliness &amp; Order Mix</span>
           <h2>⏱️ Payment Timeliness &amp; Order Type Value</h2>
         </div>
-        <div class="hint">On-time vs delayed vs unpaid invoice counts, and net amount by order type</div>
+        <div class="hint">On-time vs delayed vs unpaid invoice counts, and invoice base amount by order type</div>
       </div>
       <div class="chart-grid">
         <div class="chart-card">
@@ -504,7 +504,7 @@
           <div id="chartTimeliness" class="chart-box"><svg viewBox="0 0 560 270" xmlns="http://www.w3.org/2000/svg"><line x1="48" y1="18.0" x2="544" y2="18.0" stroke="var(--line-soft)" stroke-width="1"></line><text x="40" y="21.0" text-anchor="end" font-size="9.5" fill="var(--paper-faint)">0.0</text><line x1="48" y1="66.0" x2="544" y2="66.0" stroke="var(--line-soft)" stroke-width="1"></line><text x="40" y="69.0" text-anchor="end" font-size="9.5" fill="var(--paper-faint)">0.0</text><line x1="48" y1="114.0" x2="544" y2="114.0" stroke="var(--line-soft)" stroke-width="1"></line><text x="40" y="117.0" text-anchor="end" font-size="9.5" fill="var(--paper-faint)">0.0</text><line x1="48" y1="162.0" x2="544" y2="162.0" stroke="var(--line-soft)" stroke-width="1"></line><text x="40" y="165.0" text-anchor="end" font-size="9.5" fill="var(--paper-faint)">0.0</text><line x1="48" y1="210.0" x2="544" y2="210.0" stroke="var(--line-soft)" stroke-width="1"></line><text x="40" y="213.0" text-anchor="end" font-size="9.5" fill="var(--paper-faint)">0.0</text><rect x="77.8" y="210.0" width="105.8" height="0.0" rx="3" fill="var(--ontime)"><title>Ontime: 0</title></rect><text x="130.7" y="204.0" text-anchor="middle" font-size="9.5" fill="var(--paper)">0</text><text x="130.7" y="224" text-anchor="end" font-size="10" fill="var(--paper-faint)" transform="rotate(-38 130.7 224)">Ontime</text><rect x="243.1" y="210.0" width="105.8" height="0.0" rx="3" fill="var(--delay)"><title>Delay: 0</title></rect><text x="296.0" y="204.0" text-anchor="middle" font-size="9.5" fill="var(--paper)">0</text><text x="296.0" y="224" text-anchor="end" font-size="10" fill="var(--paper-faint)" transform="rotate(-38 296.0 224)">Delay</text><rect x="408.4" y="210.0" width="105.8" height="0.0" rx="3" fill="var(--notpaid)"><title>Not paid: 0</title></rect><text x="461.3" y="204.0" text-anchor="middle" font-size="9.5" fill="var(--paper)">0</text><text x="461.3" y="224" text-anchor="end" font-size="10" fill="var(--paper-faint)" transform="rotate(-38 461.3 224)">Not paid</text><line x1="48" y1="210" x2="544" y2="210" stroke="var(--line)" stroke-width="1.5"></line></svg></div>
         </div>
         <div class="chart-card">
-          <div class="chart-title">Order Type — Net Amount (₹ Cr)</div>
+          <div class="chart-title">Order Type — Invoice Base Amount (₹ Cr)</div>
           <div id="chartOrderType" class="chart-box"><div class="empty-note">No data available.</div></div>
         </div>
       </div>
@@ -1133,7 +1133,7 @@ function drawDonutChart(containerId, data, fmtFn){
   });
   paths += `<text x="${cx}" y="${cy-3}" text-anchor="middle" font-size="12.5" font-weight="700" fill="var(--paper)">${fmtFn(total)}</text>`;
   paths += `<text x="${cx}" y="${cy+13}" text-anchor="middle" font-size="9.5" fill="var(--paper-faint)">Total</text>`;
-  const legend = data.map(d=>`<div class="legend-item"><span class="legend-swatch" style="background:${d.color}"></span>${d.label} — ${fmtFn(d.value)} (${total?(d.value/total*100).toFixed(1):'0.0'}%)</div>`).join('');
+  const legend = data.map(d=>`<div class="legend-item"><span class="legend-swatch" style="background:${d.color}"></span>${d.label} — ${fmtFn(d.value)} (${total?(d.value/total*100).toFixed(2):'0.00'}%)</div>`).join('');
   el.innerHTML = `<div style="display:flex; align-items:center; gap:22px; flex-wrap:wrap;"><svg width="200" height="200" viewBox="0 0 200 200" style="flex-shrink:0;">${paths}</svg><div class="chart-legend">${legend}</div></div>`;
 }
 
