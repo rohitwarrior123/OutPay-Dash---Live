@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-22T05:43:22.642444+00:00",
+  "last_updated": "2026-09-22T06:03:22.011887+00:00",
   "row_count": 6456,
   "rows": [
     {
@@ -170462,7 +170462,7 @@
       "vendor_code": "VC-4512",
       "vendor_name": "Aura Jewels Private Limited",
       "asn_no": "PO-ASN-060883",
-      "invoice_no": "ATI-6228",
+      "invoice_no": "ATI-26-27-6228",
       "invoice_date": "2026-09-01",
       "qty": 0,
       "base_amount": 2232957.13,
@@ -205427,7 +205427,7 @@
       "vendor_code": "VC-4512",
       "vendor_name": "Aura Jewels Private Limited",
       "asn_no": "PO-ASN-060888",
-      "invoice_no": "ATI-6230",
+      "invoice_no": "ATI-26-27-6230",
       "invoice_date": "2026-09-01",
       "qty": 0,
       "base_amount": 15426.19,
