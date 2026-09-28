@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-28T07:18:21.777311+00:00",
+  "last_updated": "2026-09-28T07:28:21.045693+00:00",
   "row_count": 6768,
   "rows": [
     {
@@ -179457,7 +179457,7 @@
       "vendor_code": "VC-1377",
       "vendor_name": "H K JEWELS PRIVATE LIMITED",
       "asn_no": "PO-ASN-060087",
-      "invoice_no": "HKJW-2567-26-27",
+      "invoice_no": "HKJW/2567/26-27",
       "invoice_date": "2026-08-24",
       "qty": 0,
       "base_amount": 1005399.92,
@@ -192932,7 +192932,7 @@
       "vendor_code": "VC-3841",
       "vendor_name": "Jagjit Singh (Jagjit Singh & Sons Jewellers)",
       "asn_no": "PO-ASN-060286",
-      "invoice_no": "G1042",
+      "invoice_no": "G26271042",
       "invoice_date": "2026-08-24",
       "qty": 0,
       "base_amount": 253098.46,
@@ -195137,7 +195137,7 @@
       "vendor_code": "VC-3841",
       "vendor_name": "Jagjit Singh (Jagjit Singh & Sons Jewellers)",
       "asn_no": "PO-ASN-057654",
-      "invoice_no": "G1027",
+      "invoice_no": "G26271027",
       "invoice_date": "2026-08-04",
       "qty": 0,
       "base_amount": 161360.84,
