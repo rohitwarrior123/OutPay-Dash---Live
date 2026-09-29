@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-09-29T09:53:19.668202+00:00",
-  "row_count": 6832,
+  "last_updated": "2026-09-29T10:43:21.333948+00:00",
+  "row_count": 6831,
   "rows": [
     {
       "sr_no": 1,
@@ -238505,9 +238505,9 @@
       "invoice_no": "LOC/007/26-27",
       "invoice_date": "2026-09-26",
       "qty": 0,
-      "base_amount": 1051472.96,
-      "tax": 31544.1888,
-      "grand_total": 1083017.1487999998,
+      "base_amount": 2009722.0,
+      "tax": 60291.66,
+      "grand_total": 2070013.66,
       "payment_status": "Pending",
       "due_date": "2026-10-26",
       "payment_date": null,
@@ -238515,7 +238515,7 @@
       "submission_date": null,
       "digital_manual": null,
       "order_type": "Regular order ",
-      "values_in_cr": 0.1083017149,
+      "values_in_cr": 0.207001366,
       "qtr": "Q2",
       "overall_due": "Upcoming due",
       "weekly_due": "Oct Week 5",
@@ -238524,46 +238524,11 @@
       "payment_time": "Not paid",
       "submission_pct": "Not submitted",
       "spoc_inwarding": "tejas.kamtekar",
-      "tds_amount": 1051.47296,
-      "net_amount": 1081965.67584
+      "tds_amount": 2009.722,
+      "net_amount": 2068003.9379999998
     },
     {
       "sr_no": 6816,
-      "fy": "26-27",
-      "month": "Sep-26",
-      "state": "Maharashtra",
-      "city": "Mumbai",
-      "grn_date": "2026-09-28",
-      "vendor_code": "VC-0385",
-      "vendor_name": "Spectrum Exports",
-      "asn_no": "PO-ASN-062098",
-      "invoice_no": "LOC/007/26-27",
-      "invoice_date": "2026-09-26",
-      "qty": 0,
-      "base_amount": 958249.12,
-      "tax": 28747.4736,
-      "grand_total": 986996.5936,
-      "payment_status": "Pending",
-      "due_date": "2026-10-26",
-      "payment_date": null,
-      "invoice_remarks": "GRN done but invoice not upload",
-      "submission_date": null,
-      "digital_manual": null,
-      "order_type": "Regular order ",
-      "values_in_cr": 0.0986996594,
-      "qtr": "Q2",
-      "overall_due": "Upcoming due",
-      "weekly_due": "Oct Week 5",
-      "msme": "Non MSME",
-      "spoc_sourcing": "Shubham",
-      "payment_time": "Not paid",
-      "submission_pct": "Not submitted",
-      "spoc_inwarding": "tejas.kamtekar",
-      "tds_amount": 958.24912,
-      "net_amount": 986038.34448
-    },
-    {
-      "sr_no": 6817,
       "fy": "26-27",
       "month": "Sep-26",
       "state": "Rajasthan",
@@ -238598,7 +238563,7 @@
       "net_amount": 67375.98735
     },
     {
-      "sr_no": 6818,
+      "sr_no": 6817,
       "fy": "26-27",
       "month": "Sep-26",
       "state": "Rajasthan",
@@ -238633,7 +238598,7 @@
       "net_amount": 67780.86798
     },
     {
-      "sr_no": 6819,
+      "sr_no": 6818,
       "fy": "26-27",
       "month": "Sep-26",
       "state": "Rajasthan",
@@ -238668,7 +238633,7 @@
       "net_amount": 66626.19621
     },
     {
-      "sr_no": 6820,
+      "sr_no": 6819,
       "fy": "26-27",
       "month": "Sep-26",
       "state": "Rajasthan",
@@ -238703,7 +238668,7 @@
       "net_amount": 67900.83909
     },
     {
-      "sr_no": 6821,
+      "sr_no": 6820,
       "fy": "26-27",
       "month": "Sep-26",
       "state": "Rajasthan",
@@ -238738,7 +238703,7 @@
       "net_amount": 491906.15439
     },
     {
-      "sr_no": 6822,
+      "sr_no": 6821,
       "fy": "26-27",
       "month": "Sep-26",
       "state": "Maharashtra",
@@ -238773,7 +238738,7 @@
       "net_amount": 127361.6967
     },
     {
-      "sr_no": 6823,
+      "sr_no": 6822,
       "fy": "26-27",
       "month": "Sep-26",
       "state": "Maharashtra",
@@ -238808,7 +238773,7 @@
       "net_amount": 716395.65501
     },
     {
-      "sr_no": 6824,
+      "sr_no": 6823,
       "fy": "26-27",
       "month": "Sep-26",
       "state": "Maharashtra",
@@ -238843,7 +238808,7 @@
       "net_amount": 1327329.77916
     },
     {
-      "sr_no": 6825,
+      "sr_no": 6824,
       "fy": "26-27",
       "month": "Sep-26",
       "state": "Maharashtra",
@@ -238878,7 +238843,7 @@
       "net_amount": 881406.06414
     },
     {
-      "sr_no": 6826,
+      "sr_no": 6825,
       "fy": "26-27",
       "month": "Sep-26",
       "state": "Maharashtra",
@@ -238913,7 +238878,7 @@
       "net_amount": 4279484.79315
     },
     {
-      "sr_no": 6827,
+      "sr_no": 6826,
       "fy": "26-27",
       "month": "Sep-26",
       "state": "Gujarat",
@@ -238948,7 +238913,7 @@
       "net_amount": 2019049.71576
     },
     {
-      "sr_no": 6828,
+      "sr_no": 6827,
       "fy": "26-27",
       "month": "Sep-26",
       "state": "Gujarat",
@@ -238983,7 +238948,7 @@
       "net_amount": 598124.39127
     },
     {
-      "sr_no": 6829,
+      "sr_no": 6828,
       "fy": "26-27",
       "month": "Sep-26",
       "state": "Gujarat",
@@ -239018,7 +238983,7 @@
       "net_amount": 352118.09934
     },
     {
-      "sr_no": 6830,
+      "sr_no": 6829,
       "fy": "26-27",
       "month": "Sep-26",
       "state": "Gujarat",
@@ -239053,7 +239018,7 @@
       "net_amount": 140257.87587
     },
     {
-      "sr_no": 6831,
+      "sr_no": 6830,
       "fy": "26-27",
       "month": "Sep-26",
       "state": "Gujarat",
@@ -239088,7 +239053,7 @@
       "net_amount": 163054.40361
     },
     {
-      "sr_no": 6832,
+      "sr_no": 6831,
       "fy": "26-27",
       "month": "Sep-26",
       "state": "Gujarat",
