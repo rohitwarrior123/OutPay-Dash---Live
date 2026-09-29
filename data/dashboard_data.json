@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-29T06:23:22.921969+00:00",
+  "last_updated": "2026-09-29T08:48:19.769059+00:00",
   "row_count": 6768,
   "rows": [
     {
@@ -218456,7 +218456,7 @@
       "payment_status": "Pending",
       "due_date": "2026-09-29",
       "payment_date": null,
-      "invoice_remarks": "GRN done but invoice not upload",
+      "invoice_remarks": "Submitted to Finance",
       "submission_date": null,
       "digital_manual": null,
       "order_type": "Regular Order",
