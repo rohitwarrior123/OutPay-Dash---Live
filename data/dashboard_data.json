@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-30T10:58:20.522360+00:00",
+  "last_updated": "2026-09-30T11:08:22.674176+00:00",
   "row_count": 6889,
   "rows": [
     {
@@ -225520,9 +225520,9 @@
       "invoice_no": "SDN/0010/26-27",
       "invoice_date": "2026-09-18",
       "qty": 0,
-      "base_amount": 4078.16,
-      "tax": 122.3448,
-      "grand_total": 4200.5048,
+      "base_amount": 3459.0,
+      "tax": 622.62,
+      "grand_total": 4081.62,
       "payment_status": "Pending",
       "due_date": "2026-10-18",
       "payment_date": null,
@@ -225530,7 +225530,7 @@
       "submission_date": "2026-09-21",
       "digital_manual": null,
       "order_type": "Repair Order",
-      "values_in_cr": 0.0004200505,
+      "values_in_cr": 0.000408162,
       "qtr": "Q2",
       "overall_due": "Upcoming due",
       "weekly_due": "Oct Week 3",
@@ -225539,8 +225539,8 @@
       "payment_time": "Not paid",
       "submission_pct": "Ontime",
       "spoc_inwarding": "SaikumarAmancha",
-      "tds_amount": 4.07816,
-      "net_amount": 4196.42664
+      "tds_amount": 3.459,
+      "net_amount": 4078.161
     },
     {
       "sr_no": 6445,
@@ -241095,17 +241095,17 @@
       "invoice_no": "SDN/009/26-27",
       "invoice_date": "2026-08-27",
       "qty": 0,
-      "base_amount": null,
-      "tax": 0.0,
-      "grand_total": 0.0,
-      "payment_status": null,
+      "base_amount": 2762.0,
+      "tax": 138.1,
+      "grand_total": 2900.1,
+      "payment_status": "Pending",
       "due_date": "2026-09-26",
       "payment_date": null,
-      "invoice_remarks": null,
+      "invoice_remarks": "Submitted to Finance",
       "submission_date": null,
       "digital_manual": null,
-      "order_type": null,
-      "values_in_cr": 0.0,
+      "order_type": "Repair Order",
+      "values_in_cr": 0.00029001,
       "qtr": "Q2",
       "overall_due": "Overdue",
       "weekly_due": "Due till date",
@@ -241114,8 +241114,8 @@
       "payment_time": "Not paid",
       "submission_pct": "Not submitted",
       "spoc_inwarding": "SaikumarAmancha",
-      "tds_amount": 0.0,
-      "net_amount": 0.0
+      "tds_amount": 2.762,
+      "net_amount": 2897.338
     }
   ]
 }
