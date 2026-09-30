@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-09-30T10:53:23.496516+00:00",
-  "row_count": 6888,
+  "last_updated": "2026-09-30T10:58:20.522360+00:00",
+  "row_count": 6889,
   "rows": [
     {
       "sr_no": 1,
@@ -241081,6 +241081,41 @@
       "spoc_inwarding": null,
       "tds_amount": 2025.997,
       "net_amount": 2084750.913
+    },
+    {
+      "sr_no": 6889,
+      "fy": "26-27",
+      "month": "Aug-26",
+      "state": "Maharashtra",
+      "city": "Mumbai",
+      "grn_date": "2026-08-27",
+      "vendor_code": "VC-0026",
+      "vendor_name": "KP Sanghvi Jewels Private Limited",
+      "asn_no": null,
+      "invoice_no": "SDN/009/26-27",
+      "invoice_date": "2026-08-27",
+      "qty": 0,
+      "base_amount": null,
+      "tax": 0.0,
+      "grand_total": 0.0,
+      "payment_status": null,
+      "due_date": "2026-09-26",
+      "payment_date": null,
+      "invoice_remarks": null,
+      "submission_date": null,
+      "digital_manual": null,
+      "order_type": null,
+      "values_in_cr": 0.0,
+      "qtr": "Q2",
+      "overall_due": "Overdue",
+      "weekly_due": "Due till date",
+      "msme": "Non MSME",
+      "spoc_sourcing": "Vikas/ Rahul",
+      "payment_time": "Not paid",
+      "submission_pct": "Not submitted",
+      "spoc_inwarding": "SaikumarAmancha",
+      "tds_amount": 0.0,
+      "net_amount": 0.0
     }
   ]
 }
