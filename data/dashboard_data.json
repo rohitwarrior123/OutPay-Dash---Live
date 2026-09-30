@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-09-30T10:03:20.485232+00:00",
-  "row_count": 6887,
+  "last_updated": "2026-09-30T10:28:29.114518+00:00",
+  "row_count": 6888,
   "rows": [
     {
       "sr_no": 1,
@@ -241046,6 +241046,41 @@
       "spoc_inwarding": "Shubham.Kadam",
       "tds_amount": 2303.44716,
       "net_amount": 2370247.12764
+    },
+    {
+      "sr_no": 6888,
+      "fy": "26-27",
+      "month": "Jul-26",
+      "state": "West Bengal",
+      "city": "Kolkata",
+      "grn_date": "2026-09-28",
+      "vendor_code": "VC-0964",
+      "vendor_name": "AT Plus Jewellers Private Limited",
+      "asn_no": null,
+      "invoice_no": "EKLTI-44",
+      "invoice_date": "2026-07-09",
+      "qty": 0,
+      "base_amount": 2025997.0,
+      "tax": 60779.91,
+      "grand_total": 2086776.91,
+      "payment_status": "Pending",
+      "due_date": "2026-07-24",
+      "payment_date": null,
+      "invoice_remarks": "Submitted to Finance",
+      "submission_date": null,
+      "digital_manual": null,
+      "order_type": "Regular order ",
+      "values_in_cr": 0.208677691,
+      "qtr": "Q2",
+      "overall_due": "Overdue",
+      "weekly_due": "Due till date",
+      "msme": "MSME",
+      "spoc_sourcing": "Dhruba",
+      "payment_time": "Not paid",
+      "submission_pct": "Not submitted",
+      "spoc_inwarding": null,
+      "tds_amount": 2025.997,
+      "net_amount": 2084750.913
     }
   ]
 }
