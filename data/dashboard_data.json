@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-01T06:23:20.732054+00:00",
+  "last_updated": "2026-10-01T06:48:22.471603+00:00",
   "row_count": 6889,
   "rows": [
     {
@@ -178652,7 +178652,7 @@
       "vendor_code": "VC-2760",
       "vendor_name": "Shankesh Jewellers Limited",
       "asn_no": "PO-ASN-061074",
-      "invoice_no": "S1890",
+      "invoice_no": "S1890/2026-27",
       "invoice_date": "2026-08-31",
       "qty": 0,
       "base_amount": 1094291.34,
@@ -178661,8 +178661,8 @@
       "payment_status": "Pending",
       "due_date": "2026-09-30",
       "payment_date": null,
-      "invoice_remarks": "GRN done but invoice not upload",
-      "submission_date": null,
+      "invoice_remarks": "Submitted to Finance",
+      "submission_date": "2026-09-04",
       "digital_manual": null,
       "order_type": "Proto Order",
       "values_in_cr": 0.112712008,
@@ -178672,7 +178672,7 @@
       "msme": "Non MSME",
       "spoc_sourcing": "Jay",
       "payment_time": "Not paid",
-      "submission_pct": "Not submitted",
+      "submission_pct": "Ontime",
       "spoc_inwarding": "sukhada.shinde",
       "tds_amount": 1094.29134,
       "net_amount": 1126025.7888600002
