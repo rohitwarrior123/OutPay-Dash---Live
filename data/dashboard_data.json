@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-05T12:18:23.471313+00:00",
+  "last_updated": "2026-10-05T12:28:23.417694+00:00",
   "row_count": 7123,
   "rows": [
     {
@@ -143407,7 +143407,7 @@
       "vendor_code": "VC-2760",
       "vendor_name": "Shankesh Jewellers Limited",
       "asn_no": "PO-ASN-061330",
-      "invoice_no": "S1915",
+      "invoice_no": "S1915/2026-27",
       "invoice_date": "2026-09-01",
       "qty": 0.0,
       "base_amount": 4910533.29,
@@ -169377,7 +169377,7 @@
       "vendor_code": "VC-2085",
       "vendor_name": "KAMA JEWELRY PRIVATE LIMITED",
       "asn_no": "PO-ASN-061707",
-      "invoice_no": "2603002318",
+      "invoice_no": 2603002318,
       "invoice_date": "2026-09-02",
       "qty": 0.0,
       "base_amount": 2566468.78,
@@ -186562,7 +186562,7 @@
       "vendor_code": "VC-2760",
       "vendor_name": "Shankesh Jewellers Limited",
       "asn_no": "PO-ASN-062171",
-      "invoice_no": "S1968",
+      "invoice_no": "S1968/2026-27",
       "invoice_date": "2026-09-04",
       "qty": 0.0,
       "base_amount": 538226.08,
@@ -197867,7 +197867,7 @@
       "vendor_code": "VC-2760",
       "vendor_name": "Shankesh Jewellers Limited",
       "asn_no": "PO-ASN-059367",
-      "invoice_no": "S1937",
+      "invoice_no": "S1937/2026-27",
       "invoice_date": "2026-09-03",
       "qty": 0.0,
       "base_amount": 106027.34,
