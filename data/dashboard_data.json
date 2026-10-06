@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-10-06T10:38:21.864171+00:00",
-  "row_count": 7169,
+  "last_updated": "2026-10-06T10:43:22.247361+00:00",
+  "row_count": 7170,
   "rows": [
     {
       "sr_no": 1,
@@ -250916,6 +250916,41 @@
       "spoc_inwarding": "tejas.kamtekar",
       "tds_amount": 1209.7851,
       "net_amount": 1244868.8679000002
+    },
+    {
+      "sr_no": 7170,
+      "fy": "26-27",
+      "month": "Sep-26",
+      "state": "Maharashtra",
+      "city": "Mumbai",
+      "grn_date": "2026-10-05",
+      "vendor_code": "VC-0017",
+      "vendor_name": "Sheetal JewelleryHouse LLP",
+      "asn_no": "PO-00064189",
+      "invoice_no": "SJ2627SREP0128",
+      "invoice_date": "2026-09-28",
+      "qty": 0,
+      "base_amount": 825.0,
+      "tax": 148.5,
+      "grand_total": 973.5,
+      "payment_status": "Pending",
+      "due_date": "2026-10-28",
+      "payment_date": null,
+      "invoice_remarks": "GRN done but invoice not upload",
+      "submission_date": null,
+      "digital_manual": null,
+      "order_type": "Repair order",
+      "values_in_cr": 9.735e-05,
+      "qtr": "Q2",
+      "overall_due": "Upcoming due",
+      "weekly_due": "Oct Week 5",
+      "msme": "Non MSME",
+      "spoc_sourcing": "Vikas/ Rahul",
+      "payment_time": "Not paid",
+      "submission_pct": "Not submitted",
+      "spoc_inwarding": "SaikumarAmancha",
+      "tds_amount": 0.825,
+      "net_amount": 972.675
     }
   ]
 }
