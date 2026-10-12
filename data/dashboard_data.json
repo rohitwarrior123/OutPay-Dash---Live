@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-12T12:33:21.020093+00:00",
+  "last_updated": "2026-10-12T12:38:22.015324+00:00",
   "row_count": 7537,
   "rows": [
     {
@@ -203638,11 +203638,11 @@
       "vendor_code": "VC-0159",
       "vendor_name": "Sanskriti Jewels",
       "asn_no": "PO-ASN-062338",
-      "invoice_no": "GST0537/26-27",
+      "invoice_no": "SJGST0537/26-27",
       "invoice_date": "2026-09-09",
       "qty": 0,
-      "base_amount": 236285.48,
-      "grand_total": 243374.0444,
+      "base_amount": 236286.0,
+      "grand_total": 243374.58,
       "payment_status": "Pending",
       "due_date": "2026-10-09",
       "payment_date": null,
@@ -203650,7 +203650,7 @@
       "submission_date": "2026-09-12",
       "digital_manual": null,
       "order_type": "Customer Order",
-      "values_in_cr": 0.0243374044,
+      "values_in_cr": 0.024337458,
       "qtr": "Q2",
       "overall_due": "Overdue",
       "weekly_due": "Due till date",
@@ -203659,8 +203659,8 @@
       "payment_time": "Not paid",
       "submission_pct": "Ontime",
       "spoc_inwarding": "Mamta.Vishwakarma",
-      "tds_amount": 236.28548,
-      "net_amount": 243137.75892
+      "tds_amount": 236.286,
+      "net_amount": 243138.294
     },
     {
       "sr_no": 5991,
