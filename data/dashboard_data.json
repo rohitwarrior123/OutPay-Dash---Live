@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-12T12:53:21.648341+00:00",
+  "last_updated": "2026-10-12T13:08:21.788843+00:00",
   "row_count": 7537,
   "rows": [
     {
@@ -207242,7 +207242,7 @@
       "vendor_code": "VC-0007",
       "vendor_name": "Sparkle Diam Private Limited",
       "asn_no": "PO-ASN-062319",
-      "invoice_no": "2737/INR/26-27",
+      "invoice_no": "2737-INR-26-27",
       "invoice_date": "2026-09-10",
       "qty": 0,
       "base_amount": 34416.61,
