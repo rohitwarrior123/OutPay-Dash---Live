@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-12T12:43:21.400677+00:00",
+  "last_updated": "2026-10-12T12:53:21.648341+00:00",
   "row_count": 7537,
   "rows": [
     {
@@ -206256,7 +206256,7 @@
       "vendor_code": "VC-2760",
       "vendor_name": "Shankesh Jewellers Limited",
       "asn_no": "PO-ASN-062016",
-      "invoice_no": "S2049",
+      "invoice_no": "S2049/2026-27",
       "invoice_date": "2026-09-09",
       "qty": 0,
       "base_amount": 105448.82,
@@ -206290,7 +206290,7 @@
       "vendor_code": "VC-2760",
       "vendor_name": "Shankesh Jewellers Limited",
       "asn_no": "PO-ASN-062012",
-      "invoice_no": "S2050",
+      "invoice_no": "S2050/2026-27",
       "invoice_date": "2026-09-09",
       "qty": 0,
       "base_amount": 409995.86,
@@ -206324,7 +206324,7 @@
       "vendor_code": "VC-2760",
       "vendor_name": "Shankesh Jewellers Limited",
       "asn_no": "PO-ASN-062409",
-      "invoice_no": "S2051",
+      "invoice_no": "S2051/2026-27",
       "invoice_date": "2026-09-09",
       "qty": 0,
       "base_amount": 248149.47,
@@ -210132,7 +210132,7 @@
       "vendor_code": "VC-2760",
       "vendor_name": "Shankesh Jewellers Limited",
       "asn_no": "PO-ASN-062877",
-      "invoice_no": "S2057",
+      "invoice_no": "S2057/2026-27",
       "invoice_date": "2026-09-10",
       "qty": 0,
       "base_amount": 8439910.78,
