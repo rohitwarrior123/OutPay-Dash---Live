@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-12T11:03:20.350041+00:00",
+  "last_updated": "2026-10-12T11:08:21.043189+00:00",
   "row_count": 7537,
   "rows": [
     {
@@ -204182,7 +204182,7 @@
       "vendor_code": "VC-2085",
       "vendor_name": "KAMA JEWELRY PRIVATE LIMITED",
       "asn_no": "PO-ASN-061363",
-      "invoice_no": "2603002464",
+      "invoice_no": 2603002464,
       "invoice_date": "2026-09-09",
       "qty": 0,
       "base_amount": 585469.45,
@@ -204216,7 +204216,7 @@
       "vendor_code": "VC-2085",
       "vendor_name": "KAMA JEWELRY PRIVATE LIMITED",
       "asn_no": "PO-ASN-061365",
-      "invoice_no": "2603002465",
+      "invoice_no": 2603002465,
       "invoice_date": "2026-09-09",
       "qty": 0,
       "base_amount": 741927.91,
