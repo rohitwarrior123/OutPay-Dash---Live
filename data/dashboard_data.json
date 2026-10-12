@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-12T13:48:21.095891+00:00",
+  "last_updated": "2026-10-12T14:03:20.864803+00:00",
   "row_count": 7537,
   "rows": [
     {
@@ -212783,12 +212783,12 @@
       "grn_date": "2026-09-11",
       "vendor_code": "VC-2079",
       "vendor_name": "MODERN JEWELS PRIVATE LIMITED",
-      "asn_no": "PO-ASN-062778",
+      "asn_no": "PO-ASN-062778, PO-ASN-062622",
       "invoice_no": "26050431",
       "invoice_date": "2026-09-09",
       "qty": 0.0,
-      "base_amount": 3233868.37,
-      "grand_total": 3330884.4211,
+      "base_amount": 48253760.97,
+      "grand_total": 49701373.7991,
       "payment_status": "Pending",
       "due_date": "2026-10-09",
       "payment_date": null,
@@ -212796,7 +212796,7 @@
       "submission_date": "2026-09-12",
       "digital_manual": null,
       "order_type": "Consignment order ",
-      "values_in_cr": 0.3330884421,
+      "values_in_cr": 4.9701373799,
       "qtr": "Q2",
       "overall_due": "Overdue",
       "weekly_due": "Due till date",
@@ -212805,8 +212805,8 @@
       "payment_time": "Not paid",
       "submission_pct": "Ontime",
       "spoc_inwarding": "Yogesh.Nikam",
-      "tds_amount": 3233.86837,
-      "net_amount": 3327650.55273
+      "tds_amount": 43253760.969,
+      "net_amount": null
     },
     {
       "sr_no": null,
