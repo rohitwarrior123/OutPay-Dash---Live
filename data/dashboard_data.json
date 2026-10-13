@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-13T11:23:23.074562+00:00",
+  "last_updated": "2026-10-13T11:28:22.483196+00:00",
   "row_count": 7604,
   "rows": [
     {
@@ -182153,8 +182153,8 @@
       "invoice_no": "26-27/A-0651",
       "invoice_date": "2026-04-28",
       "qty": 0,
-      "base_amount": 463665.51,
-      "grand_total": 477575.4753,
+      "base_amount": 476873.0,
+      "grand_total": 491179.19,
       "payment_status": "Pending",
       "due_date": "2026-05-28",
       "payment_date": null,
@@ -182162,7 +182162,7 @@
       "submission_date": null,
       "digital_manual": null,
       "order_type": "Regular Order",
-      "values_in_cr": 0.0477575475,
+      "values_in_cr": 0.049117919,
       "qtr": "Q1",
       "overall_due": "Overdue",
       "weekly_due": "Due till date",
@@ -182171,8 +182171,8 @@
       "payment_time": "Not paid",
       "submission_pct": "Not submitted",
       "spoc_inwarding": "anandita.biswas",
-      "tds_amount": 463.66551,
-      "net_amount": 477111.80979
+      "tds_amount": 476.873,
+      "net_amount": 490702.317
     },
     {
       "sr_no": 5359.0,
